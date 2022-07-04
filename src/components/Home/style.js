@@ -35,6 +35,7 @@ export const History = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
 `
 
 export const Transactions = styled.div`
@@ -72,9 +73,8 @@ export const Transactions = styled.div`
     }
 `
 
-export const TContainer = styled.div`
+export const TContainer = styled.li`
     width: 95%;
-    height: 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,4 +109,13 @@ export const Balance = styled.div`
         font-weight: 400;
         color: ${props => props.color};
     }
+`
+
+export const HistoryList = styled.ul`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 20px;
 `

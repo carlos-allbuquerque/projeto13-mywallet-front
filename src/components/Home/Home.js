@@ -12,7 +12,7 @@ export default function Home() {
 
     const {user, setUser} = useContext(UserContext);
 
-    const [history, setHistory] = useState([]);
+    const [accountData, setAccountData] = useState([]);
     const navigate = useNavigate();
 
     const requestHeader = {
@@ -26,20 +26,23 @@ export default function Home() {
             .get(URL, requestHeader)
             .then(response => {
                 console.log(response.data)
-                setHistory(response.data)
+                setAccountData(response.data)
             })
     }, [])
     return (
         <S.Container>
             <S.Box>
                 <h1>{`Olá, ${user.name}`}</h1>
-                <img src={logout} alt="" />
+                <img src={logout} alt="" onClick={() => navigate("/login")} />
             </S.Box>
             <S.History>
-                {history.map((transaction, index) => 
-                    <Transaction value={transaction.value} date={transaction.date} 
+                <S.HistoryList>
+                    {accountData.map((transaction, index) => 
+                        <Transaction value={transaction.value} date={transaction.date} 
                     type={transaction.type} description={transaction.description} key={index} />
                 )}
+                </S.HistoryList>
+
                 <S.Balance color={(user.balance === 0) ? "red": "green"}>
                     <h2>SALDO</h2>
                     <h3 >{`${user.balance}`}</h3>
