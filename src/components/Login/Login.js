@@ -43,7 +43,7 @@ export default function Login() {
                 />
                 <button type="submit">Entrar</button>
             </S.Form>
-            <h3 onClick={() =>  navigate("/subscriptions")}>Primeira vez? Cadastre-se!</h3>
+            <h3 onClick={() =>  navigate("/signup")}>Primeira vez? Cadastre-se!</h3>
         </S.Container>
     );
 

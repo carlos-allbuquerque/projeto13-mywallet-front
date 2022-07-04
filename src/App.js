@@ -3,6 +3,7 @@ import GlobalStyles from "./GlobalStyles";
 import Login from "./components/Login/Login";
 import UserContext from "./contexts/UserContext";
 import { useState } from "react";
+import SignUp from "./components/SighUp/SignUp";
 
 export default function App() {
     const [user, setUser] = useState({});
@@ -15,6 +16,7 @@ export default function App() {
             <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Login />} />
+                        <Route path="/signup" element={<SignUp />} />
                     </Routes>
                     
             </BrowserRouter>
