@@ -55,6 +55,7 @@ export default function Login() {
             .post(URL, userData)
             .then((response) => {
                 setUser(response.data);
+                console.log(response.data)
                 navigate("/home")
             })
             .catch(() => alert("Não foi possível logar na conta"))
