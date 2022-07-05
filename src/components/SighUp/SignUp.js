@@ -19,7 +19,7 @@ export default function SignUp() {
     return (
         <S.Container> 
             <img src={logo} alt="" />
-            <S.Form onSubmit={register}>
+            <S.Form onSubmit="register()">
                 <input
                     required
                     placeholder="Nome"
