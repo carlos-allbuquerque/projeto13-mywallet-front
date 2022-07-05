@@ -8,7 +8,7 @@ import circle_minus from "../../assets/circle_minus.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-    const URL = "http://localhost:5000/history";
+    const URL = "https://projeto13backdriven.herokuapp.com/history";
 
     const {user, setUser} = useContext(UserContext);
 

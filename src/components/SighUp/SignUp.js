@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function SignUp() {
-    const URL = "http://localhost:5000/signup";
+    const URL = "https://projeto13backdriven.herokuapp.com/signup";
 
     const navigate = useNavigate();
 
