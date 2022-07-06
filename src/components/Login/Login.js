@@ -6,7 +6,7 @@ import logo from "../../assets/logo.svg";
 import axios from "axios";
 
 export default function Login() {
-    const URL = "https://projeto13backdriven.herokuapp.com/login";
+    const URL = "https://project13mywallet.herokuapp.com/login";
 
     const navigate = useNavigate();
 

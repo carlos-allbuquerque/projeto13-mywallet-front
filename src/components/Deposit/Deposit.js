@@ -6,7 +6,7 @@ import UserContext from "../../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Deposit() {
-    const URL = "https://projeto13backdriven.herokuapp.com/transaction";
+    const URL = "https://project13mywallet.herokuapp.com/transaction";
 
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();

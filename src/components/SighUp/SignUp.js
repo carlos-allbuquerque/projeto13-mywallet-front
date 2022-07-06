@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function SignUp() {
-    const URL = "https://projeto13backdriven.herokuapp.com/signup";
+    const URL = "https://project13mywallet.herokuapp.com/signup";
 
     const navigate = useNavigate();
 
